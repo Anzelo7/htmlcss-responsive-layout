@@ -1,0 +1,247 @@
+/* css default */
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+}
+
+main {
+    padding-top: 80px;
+}
+
+section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 20px;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* flex */
+
+.flex {
+    display: flex;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 20px;
+}
+
+.column {
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.align-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+/* /flex */
+
+/* shared */
+
+.card {
+    border-radius: 25px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card.text-left {
+    text-align: left;
+}
+
+.card-row {
+    border-radius: 25px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+/* /shared */
+
+/* content */
+
+/* header*/
+header {
+    position: fixed;
+    background-color: #0084fd;
+    width: 100%;
+    min-height: 80px;
+    line-height: 80px;
+}
+
+.menu {
+    color: #fff;
+}
+
+.menu ul {
+    display: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+#button {
+    color: black;
+    border-radius: 20%;
+    background-color: white;
+    padding: 5px 15px;
+}
+
+header .fa-bars,
+header img {
+    vertical-align: middle;
+}
+
+/* /header*/
+
+/*main*/
+
+section:nth-of-type(even) {
+    background-color: #9792e4;
+}
+
+
+/* product-presentation */
+#product-presentation .card {
+    background-color: #b5ddff;
+}
+
+#product-presentation .column:first-child .card {
+    padding-bottom: 0;
+}
+
+/* /product-presentation */
+
+/* planning */
+
+#planning .column {
+    width: calc(100% / 2);
+}
+
+/* /planning */
+
+/*testimonials*/
+
+#testimonilas .card-row {
+    background-color: #9792e4;
+}
+
+#testimonials img {
+    width: 100%;
+    clip-path: circle(50%);
+}
+
+/*/testimonials*/
+
+/*getstarted*/
+
+#getstarted {
+    text-align: center;
+}
+
+/*/getstarted*/
+
+/* footer */
+
+footer {
+    background-color: #333333;
+}
+
+/* /footer */
+
+
+
+/* MEDIA */
+
+@media screen and (min-width: 768px) {
+
+    #product-presentation .column {
+        width: calc(100% / 3);
+        padding: 0 10px;
+    }
+
+    #product-presentation .column:first-child {
+        width: calc(100% / 3 * 2);
+    }
+
+    #product-presentation img {
+        width: 50%;
+    }
+
+
+}
+
+@media screen and (min-width: 1200px) {
+
+    .menu .fa-bars {
+        display: none;
+    }
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+
+    #product-presentation .column:first-child .card {
+        flex-direction: row;
+    }
+
+}
+
+
+
+
+
+
+/***** debug *****/
+
+.debug section {
+    min-height: 500px;
+}
+
+.debug footer {
+    min-height: 160px;
+}
+
+.debug .column {
+    border: 1px dashed red;
+}
+
+.debug .card {
+    height: 100%;
+}
