@@ -158,7 +158,8 @@ section:nth-of-type(even) {
 }
 
 #testimonials img {
-    width: 100%;
+    width: 17%;
+    height: 149%;
     clip-path: circle(50%);
 }
 
@@ -238,9 +239,6 @@ footer {
     min-height: 160px;
 }
 
-.debug .column {
-    border: 1px dashed red;
-}
 
 .debug .card {
     height: 100%;
