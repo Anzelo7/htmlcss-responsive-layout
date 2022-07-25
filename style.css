@@ -16,7 +16,6 @@ main {
 
 section {
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 
 .container {
@@ -79,10 +78,11 @@ ul {
 .card-row {
     border-radius: 25px;
     text-align: center;
-    background-color: #fff;
+    background-color: #9792e4;
     display: flex;
     flex-direction: row;
     padding: 30px;
+    align-items: center;
 }
 
 /* /shared */
@@ -96,6 +96,7 @@ header {
     width: 100%;
     min-height: 80px;
     line-height: 80px;
+    z-index: 999;
 }
 
 .menu {
@@ -158,12 +159,20 @@ section:nth-of-type(even) {
 }
 
 #testimonials img {
-    width: 17%;
-    height: 149%;
+    width: 15%;
+    height: 150%;
     clip-path: circle(50%);
 }
 
 /*/testimonials*/
+
+/*benefits*/
+
+#benefits {
+    background-color: #9792e4;
+}
+
+/*/benefits*/
 
 /*getstarted*/
 
@@ -173,10 +182,34 @@ section:nth-of-type(even) {
 
 /*/getstarted*/
 
+/*aboutus*/
+
+#aboutus img {
+    width: 30%;
+    clip-path: circle(50%);
+    position: relative;
+}
+
+.fa-quote-left {
+    position: absolute;
+    right: 40%;
+    font-size: 70px;
+    color: #9792e4;
+}
+
+/*/aboutus*/
+
 /* footer */
 
 footer {
+    text-align: center;
+    color: white;
     background-color: #333333;
+    align-items: center;
+}
+
+footer p {
+    text-align: center;
 }
 
 /* /footer */
