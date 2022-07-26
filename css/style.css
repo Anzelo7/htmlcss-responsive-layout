@@ -68,6 +68,7 @@ ul {
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
@@ -151,6 +152,11 @@ section:nth-of-type(even) {
     background-color: #b5ddff;
 }
 
+#product-presentation .card,
+.card-demo {
+    height: 360px;
+}
+
 #product-presentation img {
     width: 50%;
 }
@@ -164,16 +170,53 @@ section:nth-of-type(even) {
     padding-bottom: 0;
 }
 
+.demo {
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#product-presentation h2 {
+    color: #0084fd;
+}
+
+#product-presentation p {
+    font-weight: 600;
+    color: #6a6a6a;
+}
+
 #product-presentation .fa-solid {
-    font-size: 40px;
+    font-size: 70px;
+    color: #0084fd;
+}
+
+#product-presentation #apple {
+    border-radius: 20px;
+    padding: 5px 10px;
+    margin: 0 100px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #0084fd;
+}
+
+#product-presentation .fa-apple {
+    margin-right: 10px;
 }
 
 /* /product-presentation */
 
 /* planning */
 
+#planning .container {
+    width: 800px;
+    height: 900px;
+}
+
 #planning .column {
     width: calc(100% / 2);
+    height: calc(100% / 2)
+
 }
 
 #planning .strategic {
