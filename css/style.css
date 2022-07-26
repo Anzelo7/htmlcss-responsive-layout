@@ -429,6 +429,55 @@ section:nth-of-type(even) {
 
 #getstarted {
     text-align: center;
+    line-height: 2;
+}
+
+#getstarted .column {
+    width: 500px;
+    margin: auto;
+}
+
+#getstarted h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+#getstarted h1 {
+    font-size: 70px;
+    font-weight: 900;
+    color: #ffd102;
+}
+
+#getstarted p {
+    color: #fff;
+    margin: 20px 0;
+}
+
+#get-button {
+    width: 200px;
+    border-radius: 30px;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 900;
+    color: #9792e4;
+    background-color: #fff;
+}
+
+#getstarted p:last-of-type a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+#dot::before {
+    margin: 5px;
+    content: '\2022';
+}
+
+#dot:after {
+    margin: 5px;
+    content: '\2022';
 }
 
 /*/getstarted*/
@@ -442,20 +491,19 @@ footer {
     align-items: center;
 }
 
+footer .row {
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+}
+
 footer p {
     text-align: center;
+    margin: 20px;
+}
+
+footer a {
+    color: #9792e4;
 }
 
 /* /footer */
-
-
-/***** debug *****/
-
-.debug footer {
-    min-height: 160px;
-}
-
-
-.debug .card {
-    height: 100%;
-}
