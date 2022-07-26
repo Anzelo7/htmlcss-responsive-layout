@@ -314,15 +314,52 @@ section:nth-of-type(even) {
     background-color: #9792e4;
 }
 
-/*/benefits*/
+#benefits .container:last-of-type {
+    margin-bottom: 60px;
+}
 
-/*getstarted*/
+#benefits .column {
+    padding: 10px 20px;
+}
 
-#getstarted {
+#benefits .card {
+    text-align: start;
+    line-height: 2;
+}
+
+#benefits h1:first-child {
+    font-size: 40px;
+    padding: 3%;
+    color: #fff;
     text-align: center;
 }
 
-/*/getstarted*/
+#benefits .card h1 {
+    font-size: 70px;
+    color: #9792e4;
+    text-align: start;
+}
+
+#benefits .card h3 {
+    color: #9792e4;
+}
+
+#benefits .card p {
+    font-weight: 600;
+    color: #6a6a6a;
+}
+
+#benefits .card nav {
+    border-radius: 20px;
+    width: 120px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    color: #fff;
+    background-color: #9792e4;
+}
+
+/*/benefits*/
 
 /*aboutus*/
 
@@ -340,6 +377,14 @@ section:nth-of-type(even) {
 }
 
 /*/aboutus*/
+
+/*getstarted*/
+
+#getstarted {
+    text-align: center;
+}
+
+/*/getstarted*/
 
 /* footer */
 
