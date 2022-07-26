@@ -103,18 +103,20 @@ header {
     color: #fff;
 }
 
-.menu ul {
-    display: none;
+.menu li {
+    display: inline-block;
 }
 
 .menu a {
     color: white;
+    margin: 10px;
     text-decoration: none;
 }
 
 #button {
     color: black;
-    border-radius: 20%;
+    font-weight: 600;
+    border-radius: 20px;
     background-color: white;
     padding: 5px 15px;
 }
@@ -134,12 +136,36 @@ section:nth-of-type(even) {
 
 
 /* product-presentation */
-#product-presentation .card {
+
+#product-presentation .column {
+    width: calc(100% / 3);
+    padding: 0 10px;
+}
+
+#product-presentation .column:first-child {
+    width: calc(100% / 3 * 2);
+}
+
+#product-presentation .card,
+.card-demo {
     background-color: #b5ddff;
 }
 
-#product-presentation .column:first-child .card {
+#product-presentation img {
+    width: 50%;
+}
+
+#product-presentation .card-demo {
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
     padding-bottom: 0;
+}
+
+#product-presentation .fa-solid {
+    font-size: 40px;
 }
 
 /* /product-presentation */
@@ -148,6 +174,11 @@ section:nth-of-type(even) {
 
 #planning .column {
     width: calc(100% / 2);
+}
+
+#planning .strategic {
+    color: #fff;
+    background-color: #9792e4;
 }
 
 /* /planning */
@@ -159,9 +190,34 @@ section:nth-of-type(even) {
 }
 
 #testimonials img {
-    width: 15%;
-    height: 150%;
-    clip-path: circle(50%);
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.end {
+    color: #fff;
+}
+
+.end h3 {
+    font-weight: 600;
+}
+
+.quote:after,
+.quote:before {
+    color: #fff;
+    vertical-align: bottom;
+    line-height: 0;
+    font-size: 60px;
+}
+
+.quote:before {
+    content: open-quote;
+}
+
+.quote:after {
+    content: close-quote;
 }
 
 /*/testimonials*/
@@ -215,58 +271,7 @@ footer p {
 /* /footer */
 
 
-
-/* MEDIA */
-
-@media screen and (min-width: 768px) {
-
-    #product-presentation .column {
-        width: calc(100% / 3);
-        padding: 0 10px;
-    }
-
-    #product-presentation .column:first-child {
-        width: calc(100% / 3 * 2);
-    }
-
-    #product-presentation img {
-        width: 50%;
-    }
-
-
-}
-
-@media screen and (min-width: 1200px) {
-
-    .menu .fa-bars {
-        display: none;
-    }
-
-    .menu ul {
-        display: flex;
-    }
-
-    .menu li {
-        display: inline-block;
-    }
-
-
-    #product-presentation .column:first-child .card {
-        flex-direction: row;
-    }
-
-}
-
-
-
-
-
-
 /***** debug *****/
-
-.debug section {
-    min-height: 500px;
-}
 
 .debug footer {
     min-height: 160px;

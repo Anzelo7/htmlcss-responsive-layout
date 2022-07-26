@@ -1,0 +1,30 @@
+/* MEDIA */
+
+@media screen and (min-width: 768px) {
+
+    .menu .fa-bars {
+        display: none;
+    }
+
+
+}
+
+
+/*@media screen and (min-width: 1200px) {
+
+    
+
+    .menu ul {
+        display: flex;
+    }
+
+    .menu li {
+        display: inline-block;
+    }
+
+
+    #product-presentation .column:first-child .card {
+        flex-direction: row;
+    }
+
+}*/
